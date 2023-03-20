@@ -72,6 +72,7 @@ winner = df1['Candidate'].value_counts().idxmax()
 print(" Election Results", '\n', "----------","\n","Total Votes:", TotalVotes,"\n","----------","\n", "Diana DeGette:", "%.3f" % DGVotePercentage,"%","(",DGVoteCount,")","\n",
       "Charles Casper Stockham: ", "%.3f" %CCSVotePercentage, "%", "(",CCSVoteCount,")","\n", "Raymon Anthony Doane: ","%.3f" % RADVotePercentage,"%", "(",RADVoteCount,")"  "\n", 
       "----------" ,"\n", "Winner: ", winner,"\n","----------")
+#Prints the results to a .txt file
 with open ('Module3 Challenge.txt','w') as text_file:
     print(" PyBank:","\n","Financial Analysis","\n","-----------------",'\n', "Total Months:", monthcount,'\n', "Total:", "$",total,"\n", "Average Change:", "$","%.2f" %  average, "\n", 
       "Greatest Increase in Profits: ","$", math.trunc(maximum), "\n", "Greatest Decrease in Profits: ", "$",math.trunc(minimum),file=text_file)
